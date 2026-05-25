@@ -165,7 +165,7 @@ jobs:
           cat > wrangler.toml <<'TOML'
           name = "sub-store-workers"
           main = "dist/worker.js"
-          compatibility_date = "2024-09-23"
+          compatibility_date = "2025-10-01"
           compatibility_flags = ["nodejs_compat"]
 
           [[kv_namespaces]]
@@ -177,7 +177,7 @@ jobs:
 
           [vars]
           SUB_STORE_BACKEND_CUSTOM_NAME = "Workers"
-          SUB_STORE_BACKEND_CUSTOM_ICON = "https://cdn.jsdelivr.net/gh/Yu9191/sub-store-workers@main/png/cloudflare.png"
+          SUB_STORE_BACKEND_CUSTOM_ICON = "https://cdn.jsdelivr.net/gh/yaaaaaaakkkkkke/sub-store-workers@main/png/cloudflare.png"
           TOML
           sed -i 's/^          //' wrangler.toml
           sed -i "s/__KV_ID__/${{ secrets.KV_NAMESPACE_ID }}/" wrangler.toml
